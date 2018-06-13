@@ -1,0 +1,10 @@
+@import '~roboto-fontface/css/roboto/roboto-fontface.css';
+@import '~normalize.css/normalize.css';
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '~font-awesome/css/font-awesome.css';
+
+body {
+	font-size: 14px;
+	font-family: Roboto, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+}

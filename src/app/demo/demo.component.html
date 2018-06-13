@@ -1,0 +1,25 @@
+<mat-drawer-container>
+  	<mat-drawer mode="side" [opened]="sidebarOpened">
+  		<mat-list>
+			<mat-list-item>
+			    <i mat-list-icon class="fa fa-user"></i>
+			    <h3 mat-line>John Smith</h3>
+			    <p mat-line>admin</p>
+			</mat-list-item>
+		</mat-list>
+
+  		<gh-demo-menu></gh-demo-menu>
+	</mat-drawer>
+	
+  	<mat-drawer-content>
+		<mat-toolbar color="primary">
+			<mat-toolbar-row>
+				<button mat-icon-button (click)="toggleSidebar()"><i class="fa fa-2x fa-bars"></i></button>
+			</mat-toolbar-row>
+		</mat-toolbar>
+
+		<div class="content">
+  			<router-outlet></router-outlet>
+		</div>
+  	</mat-drawer-content>
+</mat-drawer-container>
