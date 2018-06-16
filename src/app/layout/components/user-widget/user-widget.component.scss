@@ -1,0 +1,26 @@
+@import '../../layout.variables';
+
+.user-widget {
+	height: $header-height;
+	color: $secondary-color;
+	padding: 0 $primary-padding;
+	display: flex;
+	align-items: center;
+
+	&__avatar {
+		font-size: 3em;
+	}
+
+	&__info {
+		margin-left: $secondary-padding; 
+	}
+
+	&__name {
+		font-size: 1.2em;
+	}
+
+	&__group {
+		font-size: 0.8em;
+		line-height: 0.8em;
+	}
+}

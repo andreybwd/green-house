@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DemoDataService } from '../demo-data.service';
+import { DemoDataService } from '../services/demo-data.service';
 
 @Component({
   selector: 'gh-demo-landing',
@@ -7,12 +7,12 @@ import { DemoDataService } from '../demo-data.service';
   styleUrls: ['./demo-landing.component.scss']
 })
 export class DemoLandingComponent implements OnInit {
-	public hottestData = Array(10).join(".").split(".").map(() => this.demoDataService.mockGreenHouseFactory());
-	public nearestData = Array(5).join(".").split(".").map(() => this.demoDataService.mockGreenHouseFactory());
+	public hottestList = Array(10).join(".").split(".").map(() => this.demoDataService.mockGreenHouseFactory());
+	public nearestList = Array(5).join(".").split(".").map(() => this.demoDataService.mockGreenHouseFactory());
 
 	constructor(private demoDataService: DemoDataService) { }
 
-	ngOnInit() {
-	}
+  ngOnInit() {
+  }
 
 }

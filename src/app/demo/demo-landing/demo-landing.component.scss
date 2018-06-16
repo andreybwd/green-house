@@ -1,17 +1,4 @@
-.mat-card {
-	margin-bottom: 20px;
-}
-
-.mat-card-header {
-	justify-content: space-between;
-	align-items: center;
-}
-
-.mat-card-title {
-	font-size: 1.3em;
-    font-weight: 500;
-}
-
-.mat-card-content {
-	margin-top: 20px;
+.panel-content {
+	display: flex;
+	flex-flow: row wrap;
 }

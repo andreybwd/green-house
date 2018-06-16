@@ -1,29 +1,5 @@
-<mat-card>
-  <mat-card-header>
-    <mat-card-title>Hottest offers for you</mat-card-title>
-
-	<a routerLink="/demo/green-house-list" mat-button color="primary">Show more</a>
-  </mat-card-header>
-
-  <mat-divider></mat-divider>
-
-  <mat-card-content>
-  	<gh-demo-green-house-grid [data]="hottestData"></gh-demo-green-house-grid>
-  </mat-card-content>
-
-</mat-card>
-
-<mat-card>
-  <mat-card-header>
-    <mat-card-title>Or nearest to your location</mat-card-title>
-
-	<a  routerLink="/demo/green-house-list" mat-button color="primary">Show more</a>
-  </mat-card-header>
-
-  <mat-divider></mat-divider>
-
-  <mat-card-content>
-  	<gh-demo-green-house-grid [data]="nearestData"></gh-demo-green-house-grid>
-  </mat-card-content>
-
-</mat-card>
+<gh-ui-panel [title]="'Hottest offers for you'">
+	<div class="panel-content">
+		<gh-ui-card *ngFor="let item of hottestList" [item]="item"></gh-ui-card>
+	</div>
+</gh-ui-panel>

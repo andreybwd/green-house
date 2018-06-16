@@ -1,0 +1,36 @@
+@import '../../layout.variables';
+
+.menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+
+	&__title {
+		margin-top: $primary-padding;
+		padding: 0 $secondary-padding;
+		color: $secondary-color;
+		font-size: 1.3em;
+	}
+
+	&__group {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	&__link {
+		padding: $secondary-padding $primary-padding;
+		color: $secondary-color;
+		display: block;
+		text-decoration: none;
+		margin-bottom: 1px;
+
+		&--active, &:hover {
+			background: rgba(255, 255, 255, 0.2);
+		}
+	}
+
+	&__counter {
+		color: #DD2233;
+	}
+}

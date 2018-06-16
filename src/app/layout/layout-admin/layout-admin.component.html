@@ -1,0 +1,15 @@
+<mat-drawer-container>
+  	<mat-drawer mode="side" [opened]="sidebarOpened">
+  		<gh-user-widget></gh-user-widget>
+
+  		<gh-menu></gh-menu>
+	</mat-drawer>
+	
+  	<mat-drawer-content>
+		<gh-header (onHamburgerClick)="toogleSidebar()"></gh-header>
+
+		<div class="content">
+  			<ng-content></ng-content>
+		</div>
+  	</mat-drawer-content>
+</mat-drawer-container>
