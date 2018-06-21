@@ -1,0 +1,73 @@
+:host {
+	position: relative;
+	display: block;
+}
+
+.feedback-card {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+	background-color: #fafafa;
+
+	&__avatar {
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		width: 100px;
+		height: 100px;
+		text-align: center;
+	}
+
+	&__photo {
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+	}
+
+	&__info {
+		position: absolute;
+		top: 10px;
+		left: 120px;
+		right: 10px;
+		bottom: 10px;
+	}
+
+	&__text {
+		line-height: 15px;
+		overflow: hidden;
+	    height: 105px;
+	    position: relative;
+	    padding: 0 20px;
+	    font-style: italic;
+
+	    &:before {
+			content: open-quote;
+			position: absolute;
+			left: 0;
+			top: 0;
+			color: #3b4045;
+			font-size: 3em;
+			line-height: 1;
+			font-style: normal;
+		}
+
+	    &:after {
+			content: close-quote;
+			position: absolute;
+			right: 0;
+			bottom: -25px;
+			color: #3b4045;
+			font-size: 3em;
+			line-height: 1;
+			font-style: normal;
+		}
+	}
+
+	&__name {
+		text-align: right;
+		margin-top: 10px;
+	}
+}

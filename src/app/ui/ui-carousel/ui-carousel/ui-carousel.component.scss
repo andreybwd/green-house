@@ -1,0 +1,37 @@
+.carousel {
+	padding-bottom: 15px;
+}
+
+.carousel-item {
+	padding: 5px;
+
+	> .item {
+		display: flex;
+	}
+}
+
+.carousel-indicators {
+	bottom: 0;
+	margin: 0;
+	padding: 0;
+
+	> li {
+		background-color: #3b4045;
+
+		&.active {
+			background-color: #3f51b5;
+		}
+	}
+}
+
+.carousel-control {
+	cursor: pointer;
+	width: 50px;
+	opacity: 0.9;
+
+	> span {
+		background-color: #3f51b5;
+		border-radius: 50%;
+		background-size: 60% 60%;
+	}
+}

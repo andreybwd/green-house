@@ -1,0 +1,7 @@
+<carousel>
+	<slide *ngFor="let items of groups">
+		<ng-container *ngFor="let item of items">
+			<ng-container *ngTemplateOutlet="slideTemplate; context: {item: item}"></ng-container>
+		</ng-container>
+	</slide>
+</carousel>

@@ -7,8 +7,24 @@ import { DemoDataService } from '../services/demo-data.service';
   styleUrls: ['./demo-landing.component.scss']
 })
 export class DemoLandingComponent implements OnInit {
-	public hottestList = Array(10).join(".").split(".").map(() => this.demoDataService.mockGreenHouseFactory());
-	public nearestList = Array(5).join(".").split(".").map(() => this.demoDataService.mockGreenHouseFactory());
+	public topGreenHouseList = [
+		Array(3).join(".").split(".").map(() => this.demoDataService.mockGreenHouseFactory()),
+		Array(3).join(".").split(".").map(() => this.demoDataService.mockGreenHouseFactory()),
+		Array(3).join(".").split(".").map(() => this.demoDataService.mockGreenHouseFactory())
+	];
+	public topSellerList = [
+		Array(5).join(".").split(".").map(() => this.demoDataService.mockSellerFactory()),
+		Array(5).join(".").split(".").map(() => this.demoDataService.mockSellerFactory())
+	];
+	public feedbackList = [
+		Array(4).join(".").split(".").map(() => this.demoDataService.mockFeedbackFactory()),
+		Array(4).join(".").split(".").map(() => this.demoDataService.mockFeedbackFactory()),
+		Array(4).join(".").split(".").map(() => this.demoDataService.mockFeedbackFactory())
+	];
+	public topVegetableList = [
+		Array(3).join(".").split(".").map(() => this.demoDataService.mockVegetableFactory()),
+		Array(3).join(".").split(".").map(() => this.demoDataService.mockVegetableFactory())
+	];
 
 	constructor(private demoDataService: DemoDataService) { }
 
@@ -16,3 +32,4 @@ export class DemoLandingComponent implements OnInit {
   }
 
 }
+

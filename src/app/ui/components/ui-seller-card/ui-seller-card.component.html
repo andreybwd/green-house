@@ -1,0 +1,31 @@
+<div class="seller-card">
+	<div class="seller-card__avatar">
+		<img src="assets/avatar1.gif" class="seller-card__photo" />
+	</div>
+
+	<div class="seller-card__info">
+		<div class="seller-card__name">
+			{{item.name}}
+		</div>
+
+		<div class="seller-card__params">
+			<div class="seller-card-param">
+				<div class="seller-card-param__title">Rating:</div>
+
+				<div class="seller-card-param__value">{{item.params.rating}}</div>
+			</div>
+
+			<div class="seller-card-param">
+				<div class="seller-card-param__title">Added:</div>
+
+				<div class="seller-card-param__value">{{item.params.addedGreenHouses}}</div>
+			</div>
+
+			<div class="seller-card-param">
+				<div class="seller-card-param__title">Feedbacks:</div>
+
+				<div class="seller-card-param__value">{{item.params.feedbackCount}}</div>
+			</div>
+		</div>
+	</div>
+</div>

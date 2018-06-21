@@ -1,21 +1,21 @@
-<div class="card">
-	<div class="card__header">
-		<div class="card__title">{{item.title}}</div>
+<div class="gh-card">
+	<div class="gh-card__header">
+		<div class="gh-card__title">{{item.title}}</div>
 
-		<div class="card__header-icons">
+		<div class="gh-card__header-icons">
 			<i class="fa fa-heart"></i>
 		</div>
 	</div>
 	
-	<div class="card__image" [style.background-image]="'url(' + item.image + ')'"></div>
+	<div class="gh-card__image" [style.background-image]="'url(' + item.image + ')'"></div>
 
-	<div class="card__params">
-		<div class="card__param" title="Available square meters">
-			<i class="fa fa-pie-chart card__param-icon"></i> {{item.square}}
+	<div class="gh-card__params">
+		<div class="gh-card__param" title="Available square meters">
+			<i class="fa fa-pie-chart gh-card__param-icon"></i> {{item.square}}
 		</div>
 
-		<div class="card__param" title="Price per 1 square meter">
-			<i class="fa fa fa-dollar card__param-icon"></i> {{item.price}}
+		<div class="gh-card__param" title="Price per 1 square meter">
+			<i class="fa fa fa-dollar gh-card__param-icon"></i> {{item.price}}
 		</div>
 	</div>
 </div>

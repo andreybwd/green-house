@@ -1,5 +1,116 @@
-<gh-ui-panel [title]="'Hottest offers for you'">
-	<div class="panel-content">
-		<gh-ui-card *ngFor="let item of hottestList" [item]="item"></gh-ui-card>
-	</div>
-</gh-ui-panel>
+<div class="landing">
+	<gh-ui-panel class="landing__panel" [title]="'Hot rent proposals'">
+		<gh-ui-carousel class="panel-content" [groups]="topGreenHouseList" [slideTemplate]="greenHouseCard"></gh-ui-carousel>
+	</gh-ui-panel>
+
+	<gh-ui-panel class="landing__panel" [title]="'Top Sellers'">
+		<gh-ui-carousel class="panel-content" [groups]="topSellerList" [slideTemplate]="sellerCard"></gh-ui-carousel>
+	</gh-ui-panel>
+
+	<gh-ui-panel class="landing__panel" [title]="'Feedbacks'">
+		<gh-ui-carousel class="panel-content" [groups]="feedbackList" [slideTemplate]="feedbackCard"></gh-ui-carousel>
+	</gh-ui-panel>
+
+	<gh-ui-panel class="landing__panel" [title]="'Most popular vegetables'">
+		<gh-ui-carousel class="panel-content" [groups]="topVegetableList" [slideTemplate]="vegetableCard"></gh-ui-carousel>
+	</gh-ui-panel>
+
+	<gh-ui-panel class="landing__panel" [title]="'Benefits'">
+		<div class="panel-content landing__blocks">
+			<div class="block">
+				<div class="block__title">For buyers</div>
+
+				<ul class="block__list">
+					<li>Ability to deal with a lowest price</li>
+					<li>Some other</li>
+				</ul>
+
+				<gh-ui-button class="block__link" [title]="'About'"></gh-ui-button>
+			</div>
+
+			<div class="block">
+				<div class="block__title">For sellers</div>
+
+				<ul class="block__list">
+					<li>Rent your field ASAP</li>
+					<li>Some other</li>
+				</ul>
+
+				<gh-ui-button class="block__link" [title]="'About'"></gh-ui-button>
+			</div>
+		</div>
+	</gh-ui-panel>
+
+	<gh-ui-panel class="landing__panel" [title]="'Motivation'">
+		<div class="panel-content">
+			<div class="landing__blocks">
+				<div class="block">
+					<div class="block__title">I want to rent a field for my childrens</div>
+
+					<div class="block__text">Some text bla bla bla</div>
+
+					<gh-ui-button class="block__link" [title]="'Details'"></gh-ui-button>
+				</div>
+
+				<div class="block">
+					<div class="block__title">I want to rent a field for charity purposes</div>
+
+					<div class="block__text">Some text bla bla bla</div>
+
+					<gh-ui-button class="block__link" [title]="'Details'"></gh-ui-button>
+				</div>
+			</div>
+
+			<div class="landing__blocks">
+				<div class="block">
+					<div class="block__title">I want to eat 100% natural foods</div>
+
+					<div class="block__text">Some text bla bla bla</div>
+
+					<gh-ui-button class="block__link" [title]="'Details'"></gh-ui-button>
+				</div>
+
+				<div class="block">
+					<div class="block__title">I want to resale vegetables</div>
+
+					<div class="block__text">Some text bla bla bla</div>
+
+					<gh-ui-button class="block__link" [title]="'Details'"></gh-ui-button>
+				</div>
+			</div>
+		</div>
+	</gh-ui-panel>
+
+	<gh-ui-panel class="landing__panel" [title]="'Try it now'">
+		<div class="panel-content landing__blocks">
+			<div class="block">
+				<div class="block__title">I want to be a buyer</div>
+
+				<gh-ui-button class="block__link" [title]="'Register'"></gh-ui-button>
+			</div>
+
+			<div class="block">
+				<div class="block__title">I want to be a seller</div>
+
+				<gh-ui-button class="block__link" [title]="'Register'"></gh-ui-button>
+			</div>
+		</div>
+	</gh-ui-panel>
+
+
+	<ng-template #greenHouseCard let-item="item">
+		<gh-ui-card class="landing__green-house-card" [item]="item"></gh-ui-card>
+	</ng-template>
+
+	<ng-template #sellerCard let-item="item">
+		<gh-ui-seller-card class="landing__seller-card" [item]="item"></gh-ui-seller-card>
+	</ng-template>
+
+	<ng-template #feedbackCard let-item="item">
+		<gh-ui-feedback-card class="landing__feedback-card" [item]="item"></gh-ui-feedback-card>
+	</ng-template>
+
+	<ng-template #vegetableCard let-item="item">
+		<gh-ui-vegetable-card class="landing__vegetable-card" [item]="item"></gh-ui-vegetable-card>
+	</ng-template>
+</div>

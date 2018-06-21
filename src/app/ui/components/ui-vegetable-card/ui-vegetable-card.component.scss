@@ -3,7 +3,7 @@
 	display: block;
 }
 
-.gh-card {
+.vegetable-card {
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -30,48 +30,18 @@
 	&__title {
 		font-weight: 500;
 		text-shadow: 1px 1px #000;
-		width: 85%;
 		overflow: hidden;
 		white-space: nowrap;
 		text-overflow: ellipsis;
 	}
 
-	&__header-icons {
-		margin-left: auto;
-		cursor: pointer;
-	}
-
 	&__image {
 		position: absolute;
 		top: 0;
-		bottom: 25%;
+		bottom: 0;
 		left: 0;
 		right: 0;
 		background-size: cover;
 		z-index: 1;
-	}
-
-	&__params {
-		position: absolute;
-		top: 75%;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-
-	&__param {
-		margin: 0 15px;
-		text-align: center;
-		font-size: 0.9em;
-		font-weight: 500;
-	}
-
-	&__param-icon {
-		font-size: 2em;
-		display: block;
-		margin-bottom: 5px;
 	}
 }

@@ -11,14 +11,15 @@ import { DemoUserManageComponent } from './demo-user-manage/demo-user-manage.com
 import { DemoManageComponent } from './demo-manage/demo-manage.component';
 import { DemoRoutingModule } from './demo-routing.module';
 import { LayoutModule } from '@green-house/layout';
-import { UiModule } from '@green-house/ui';
+import { UiModule, UiCarouselModule } from '@green-house/ui';
 
 @NgModule({
   imports: [
     CommonModule,
     DemoRoutingModule,
     LayoutModule,
-    UiModule
+    UiModule,
+    UiCarouselModule
   ],
   declarations: [
 	  DemoComponent, 

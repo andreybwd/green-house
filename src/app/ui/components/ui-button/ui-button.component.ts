@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'gh-ui-button',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ui-button.component.scss']
 })
 export class UiButtonComponent implements OnInit {
+	@Input() title: string;
 
   constructor() { }
 
